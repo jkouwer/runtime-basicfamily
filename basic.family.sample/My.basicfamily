@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basicfamily:Family xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basicfamily="http://basicfamily/1.0" name="Kouwer">
+  <members xsi:type="basicfamily:Man" name="Jeroen" children="//@members.2 //@members.3 //@members.4" relations="//@relations.0 //@relations.2"/>
+  <members xsi:type="basicfamily:Woman" name="Joke" children="//@members.2 //@members.3 //@members.4" relations="//@relations.0 //@relations.3"/>
+  <members xsi:type="basicfamily:Man" name="Pascal" parents="//@members.0 //@members.1" mother="//@members.1" father="//@members.0"/>
+  <members xsi:type="basicfamily:Man" name="Niels" parents="//@members.0 //@members.1" mother="//@members.1" father="//@members.0" relations="//@relations.1"/>
+  <members xsi:type="basicfamily:Man" name="Robin" parents="//@members.0 //@members.1" mother="//@members.1" father="//@members.0"/>
+  <members xsi:type="basicfamily:Woman" name="Nienke" relations="//@relations.1"/>
+  <members xsi:type="basicfamily:Man" name="Sander" relations="//@relations.2 //@relations.3"/>
+  <relations description="married" personA="//@members.1" personB="//@members.0"/>
+  <relations description="classmate" personA="//@members.3" personB="//@members.5"/>
+  <relations description="Good Friend" personA="//@members.0" personB="//@members.6"/>
+  <relations description="Not so good friends" personA="//@members.1" personB="//@members.6"/>
+</basicfamily:Family>
