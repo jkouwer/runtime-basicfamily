@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <basicfamily:Family xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basicfamily="http://basicfamily/1.0" name="Kouwer">
-  <members xsi:type="basicfamily:Man" name="Pascal">
+  <members xsi:type="basicfamily:Man" name="Boy">
     <mother href="joke.basicfamily#/"/>
     <father href="jeroen.basicfamily#/"/>
   </members>

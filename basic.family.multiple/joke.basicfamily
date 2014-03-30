@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<basicfamily:Woman xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:basicfamily="http://basicfamily/1.0" name="Joke"/>
+<basicfamily:Woman xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:basicfamily="http://basicfamily/1.0" name="Jane">
+  <relations href="kouwer.basicfamily#//@relations.0"/>
+</basicfamily:Woman>

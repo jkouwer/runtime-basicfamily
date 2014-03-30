@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/description/style/1.1.0" name="basicfamily" version="7.0.0">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="basicfamily" version="8.1.0">
   <ownedViewpoints name="Persons" modelFileExtension="basicfamily">
-    <ownedRepresentations xsi:type="description:DiagramDescription" name="Persons" domainClass="basicfamily.Family">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Persons" domainClass="basicfamily.Family">
       <defaultLayer name="Default">
         <nodeMappings name="ManNode" semanticCandidatesExpression="feature:members" domainClass="basicfamily.Man">
           <style xsi:type="style:SquareDescription" labelExpression="[' ' + self.name.toUpper() + ' '/]" iconPath="/basci.family.design/icons/man.png" labelPosition="node" resizeKind="NSEW">
@@ -17,6 +17,15 @@
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
           </style>
         </nodeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:ContainerDropDescription">
+            <oldContainer name="oldSemanticContainer"/>
+            <newContainer name="newSemanticContainer"/>
+            <element name="element"/>
+            <newViewContainer name="newContainerView"/>
+            <initialOperation/>
+          </ownedTools>
+        </toolSections>
       </defaultLayer>
       <additionalLayers name="FatherMotherLayer">
         <edgeMappings name="FatherEdge" sourceMapping="//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Persons']/@defaultLayer/@nodeMappings[name='ManNode'] //@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Persons']/@defaultLayer/@nodeMappings[name='WomanNode']" targetMapping="//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Persons']/@defaultLayer/@nodeMappings[name='ManNode']" targetFinderExpression="feature:father">
@@ -54,46 +63,62 @@
           </style>
         </edgeMappings>
       </additionalLayers>
+      <nodeMappings xsi:type="description_1:NodeMappingImport"/>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description:DiagramDescription" name="Boxed Persons" domainClass="basicfamily.Family">
-      <edgeMappings name="RelationEdge" sourceMapping="//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Boxed%20Persons']/@containerMappings[name='ManContainer']/@borderedNodeMappings[name='RelationNode'] //@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Boxed%20Persons']/@containerMappings[name='WomanContainer']/@borderedNodeMappings[name='RelationNode']" targetMapping="//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Boxed%20Persons']/@containerMappings[name='ManContainer']/@borderedNodeMappings[name='RelationNode'] //@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Boxed%20Persons']/@containerMappings[name='WomanContainer']/@borderedNodeMappings[name='RelationNode']" targetFinderExpression="[self/]">
-        <style sizeComputationExpression="2">
-          <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-          <centerLabelStyleDescription>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          </centerLabelStyleDescription>
-        </style>
-      </edgeMappings>
-      <containerMappings name="ManContainer" semanticCandidatesExpression="feature:members" domainClass="basicfamily.Man">
-        <borderedNodeMappings name="RelationNode" semanticCandidatesExpression="[self.relations->collect(r|r.personA)/]" domainClass="basicfamily.Person">
-          <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="feature:description" hideLabelByDefault="true" resizeKind="NSEW">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" dropDescriptions="//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@toolSections.0/@ownedTools[name='External%20Person%20from%20Treeview']" name="Family" domainClass="basicfamily.Family">
+      <defaultLayer name="Relations">
+        <nodeMappings name="BorderedManNode" createElements="false" domainClass="basicfamily.Man">
+          <style xsi:type="style:SquareDescription" labelExpression="[' ' + self.name.toUpper() + ' '/]" iconPath="/basci.family.design/icons/man.png" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
           </style>
-        </borderedNodeMappings>
-        <style xsi:type="style:FlatContainerStyleDescription" labelExpression="[' ' + self.name.toUpper() + ' '/]" iconPath="/basci.family.design/icons/man.png" backgroundStyle="Liquid">
-          <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-          <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
-        </style>
-      </containerMappings>
-      <containerMappings name="WomanContainer" semanticCandidatesExpression="feature:members" domainClass="basicfamily.Woman">
-        <borderedNodeMappings name="RelationNode" semanticCandidatesExpression="feature:relations" domainClass="basicfamily.Relation">
-          <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="feature:description" hideLabelByDefault="true" resizeKind="NSEW">
+        </nodeMappings>
+        <nodeMappings name="BorderedWomanNode" createElements="false" domainClass="basicfamily.Woman">
+          <style xsi:type="style:SquareDescription" labelExpression="[' ' + self.name.toUpper() + ' '/]" iconPath="/basci.family.design/icons/woman.png" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
           </style>
-        </borderedNodeMappings>
-        <style xsi:type="style:FlatContainerStyleDescription" labelExpression="[' ' + self.name.toUpper() + ' '/]" iconPath="/basci.family.design/icons/woman.png" backgroundStyle="Liquid">
-          <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-          <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
-        </style>
-      </containerMappings>
+        </nodeMappings>
+        <edgeMappings name="BoxedRelationEdge" semanticCandidatesExpression="feature:relations" synchronizationLock="true" sourceMapping="//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@nodeMappings[name='BorderedManNode'] //@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@nodeMappings[name='BorderedWomanNode']" targetMapping="//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@nodeMappings[name='BorderedManNode'] //@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@nodeMappings[name='BorderedWomanNode']" targetFinderExpression="[self.personB/]" sourceFinderExpression="[self.personA/]" domainClass="basicfamily.Relation" useDomainElement="true">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription showIcon="false" labelExpression="[self.description/]">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="BoxedParentsEdge" sourceMapping="//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@nodeMappings[name='BorderedManNode'] //@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@nodeMappings[name='BorderedWomanNode']" targetMapping="//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@edgeMappings[name='BoxedRelationEdge']" targetFinderExpression="[self.father.relations->select(r |  (r.personA = self.father and r.personB = self.mother) or (r.personA = self.mother and r.personB = self.father))/]">
+          <style sourceArrow="InputArrow" targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections name="Existing Elements">
+          <ownedTools xsi:type="tool:ContainerDropDescription" name="External Person from Treeview" dragSource="PROJECT_EXPLORER">
+            <oldContainer name="oldSemanticContainer"/>
+            <newContainer name="newSemanticContainer"/>
+            <element name="element"/>
+            <newViewContainer name="newContainerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="[self.eClass().instanceClassName = 'basicfamily.Man'/]">
+                  <subModelOperations xsi:type="tool:CreateView" mapping="//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@nodeMappings[name='BorderedManNode']" containerViewExpression="var:newContainerView"/>
+                </subModelOperations>
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="[self.eClass().instanceClassName = 'basicfamily.Woman'/]">
+                  <subModelOperations xsi:type="tool:CreateView" mapping="//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@nodeMappings[name='BorderedWomanNode']" containerViewExpression="var:newContainerView"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <decorationDescriptionsSet>
+          <decorationDescriptions xsi:type="description_1:MappingBasedDecoration" name="Referenced Person" decoratorPath="/basci.family.design/icons/shortcut.gif" preconditionExpression="[diagram.target &lt;> self.eContainer()/]" mappings="//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@nodeMappings[name='BorderedManNode'] //@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@nodeMappings[name='BorderedWomanNode']"/>
+        </decorationDescriptionsSet>
+      </defaultLayer>
     </ownedRepresentations>
   </ownedViewpoints>
 </description:Group>

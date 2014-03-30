@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basicfamily="http://basicfamily/1.0" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/description/style/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description/style" xmi:id="_aykksLOeEeO_8YkUVb_3fw" selectedViews="_GpTT4LOfEeO_8YkUVb_3fw" version="7.0.0">
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basicfamily="http://basicfamily/1.0" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_aykksLOeEeO_8YkUVb_3fw" selectedViews="_GpTT4LOfEeO_8YkUVb_3fw" version="8.1.0">
   <models xmi:type="basicfamily:Man" href="jeroen.basicfamily#/"/>
   <models xmi:type="basicfamily:Woman" href="joke.basicfamily#/"/>
   <models xmi:type="basicfamily:Family" href="kouwer.basicfamily#/"/>
   <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_GpTT4LOfEeO_8YkUVb_3fw" initialized="true">
-    <ownedRepresentations xmi:type="viewpoint:DSemanticDiagram" xmi:id="_IMPGQLOfEeO_8YkUVb_3fw" name="new Persons">
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_IMPGQLOfEeO_8YkUVb_3fw" name="new Persons">
       <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_IMPGR7OfEeO_8YkUVb_3fw" source="GMF_DIAGRAMS">
         <data xmi:type="notation:Diagram" xmi:id="_IMPGSLOfEeO_8YkUVb_3fw" type="Sirius" element="_IMPGQLOfEeO_8YkUVb_3fw" measurementUnit="Pixel">
           <children xmi:type="notation:Node" xmi:id="_IMPGSrOfEeO_8YkUVb_3fw" type="2001" element="_IMPGQbOfEeO_8YkUVb_3fw">
@@ -16,28 +16,187 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IMY3RrOfEeO_8YkUVb_3fw"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_IMY3QLOfEeO_8YkUVb_3fw" fontName="Segoe UI" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IMY3QbOfEeO_8YkUVb_3fw" x="150" y="115" width="116" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IMY3QbOfEeO_8YkUVb_3fw" x="145" y="85" width="116" height="30"/>
           </children>
           <styles xmi:type="notation:DiagramStyle" xmi:id="_IMPGSbOfEeO_8YkUVb_3fw"/>
         </data>
       </ownedAnnotationEntries>
-      <ownedDiagramElements xmi:type="viewpoint:DNode" xmi:id="_IMPGQbOfEeO_8YkUVb_3fw" name=" PASCAL " width="3" height="3" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_IMPGQbOfEeO_8YkUVb_3fw" name=" PASCAL " width="3" height="3" resizeKind="NSEW">
         <target xmi:type="basicfamily:Man" href="kouwer.basicfamily#//@members.0"/>
         <semanticElements xmi:type="basicfamily:Man" href="kouwer.basicfamily#//@members.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="viewpoint:Square" xmi:id="_IMPGQrOfEeO_8YkUVb_3fw" iconPath="/basci.family.design/icons/man.png" labelPosition="node">
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_IMPGQrOfEeO_8YkUVb_3fw" iconPath="/basci.family.design/icons/man.png" labelPosition="node">
           <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_IMPGQ7OfEeO_8YkUVb_3fw"/>
           <description xmi:type="style:SquareDescription" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Persons']/@defaultLayer/@nodeMappings[name='ManNode']/@style"/>
           <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_IMPGRLOfEeO_8YkUVb_3fw"/>
           <color xmi:type="viewpoint:RGBValues" xmi:id="_IMPGRbOfEeO_8YkUVb_3fw" red="194" green="239" blue="255"/>
         </ownedStyle>
-        <actualMapping xmi:type="description:NodeMapping" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Persons']/@defaultLayer/@nodeMappings[name='ManNode']"/>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Persons']/@defaultLayer/@nodeMappings[name='ManNode']"/>
       </ownedDiagramElements>
-      <description xmi:type="description:DiagramDescription" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Persons']"/>
-      <filterVariableHistory xmi:type="viewpoint:FilterVariableHistory" xmi:id="_IMPGRrOfEeO_8YkUVb_3fw"/>
-      <activatedLayers xmi:type="description:Layer" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Persons']/@defaultLayer"/>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Persons']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_IMPGRrOfEeO_8YkUVb_3fw"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Persons']/@defaultLayer"/>
+      <target xmi:type="basicfamily:Family" href="kouwer.basicfamily#/"/>
+    </ownedRepresentations>
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_DtiYMLRhEeOB_tgHmI_9Ng" name="new Boxed Persons">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_DtriILRhEeOB_tgHmI_9Ng" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_DtriIbRhEeOB_tgHmI_9Ng" type="Sirius" element="_DtiYMLRhEeOB_tgHmI_9Ng" measurementUnit="Pixel">
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_DtriIrRhEeOB_tgHmI_9Ng"/>
+        </data>
+      </ownedAnnotationEntries>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Boxed%20Persons']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_DtiYMbRhEeOB_tgHmI_9Ng"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Boxed%20Persons']/@defaultLayer"/>
+      <target xmi:type="basicfamily:Family" href="kouwer.basicfamily#/"/>
+    </ownedRepresentations>
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_T87nkLhJEeOLO7QreGm5IA" name="Jungle Family">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_T9ExgLhJEeOLO7QreGm5IA" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_T9ExgbhJEeOLO7QreGm5IA" type="Sirius" element="_T87nkLhJEeOLO7QreGm5IA" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_MkH8ELhLEeOLO7QreGm5IA" type="2001" element="_MjrQILhLEeOLO7QreGm5IA">
+            <children xmi:type="notation:Node" xmi:id="_MkH8E7hLEeOLO7QreGm5IA" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MkH8FLhLEeOLO7QreGm5IA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MkH8FbhLEeOLO7QreGm5IA" type="3003" element="_MjrQIbhLEeOLO7QreGm5IA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_MkH8FrhLEeOLO7QreGm5IA" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkH8F7hLEeOLO7QreGm5IA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_MkH8EbhLEeOLO7QreGm5IA" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MkH8ErhLEeOLO7QreGm5IA" x="15" y="15" width="85" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_OAEVoLhLEeOLO7QreGm5IA" type="2001" element="_N_UuwLhLEeOLO7QreGm5IA">
+            <children xmi:type="notation:Node" xmi:id="_OAEVo7hLEeOLO7QreGm5IA" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_OAEVpLhLEeOLO7QreGm5IA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_OANfkLhLEeOLO7QreGm5IA" type="3003" element="_N_npsLhLEeOLO7QreGm5IA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_OANfkbhLEeOLO7QreGm5IA" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OANfkrhLEeOLO7QreGm5IA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_OAEVobhLEeOLO7QreGm5IA" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OAEVorhLEeOLO7QreGm5IA" x="215" y="15" width="106" height="29"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_6ekIELhOEeOLO7QreGm5IA" type="2001" element="_6dhmQLhOEeOLO7QreGm5IA">
+            <children xmi:type="notation:Node" xmi:id="_6ekIE7hOEeOLO7QreGm5IA" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_6ekIFLhOEeOLO7QreGm5IA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_6etSALhOEeOLO7QreGm5IA" type="3003" element="_6dqwMLhOEeOLO7QreGm5IA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_6etSAbhOEeOLO7QreGm5IA" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6etSArhOEeOLO7QreGm5IA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_6ekIEbhOEeOLO7QreGm5IA" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6ekIErhOEeOLO7QreGm5IA" x="110" y="90" width="96" height="30"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_T9ExgrhJEeOLO7QreGm5IA"/>
+          <edges xmi:type="notation:Edge" xmi:id="_42kPgLhOEeOLO7QreGm5IA" type="4001" element="_42IKoLhOEeOLO7QreGm5IA" source="_MkH8ELhLEeOLO7QreGm5IA" target="_OAEVoLhLEeOLO7QreGm5IA">
+            <children xmi:type="notation:Node" xmi:id="_42kPhLhOEeOLO7QreGm5IA" visible="false" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_42kPhbhOEeOLO7QreGm5IA" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_42kPhrhOEeOLO7QreGm5IA" visible="false" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_42kPh7hOEeOLO7QreGm5IA" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_42uAgLhOEeOLO7QreGm5IA" visible="false" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_42uAgbhOEeOLO7QreGm5IA" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_42kPgbhOEeOLO7QreGm5IA"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_42kPgrhOEeOLO7QreGm5IA" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_42kPg7hOEeOLO7QreGm5IA" points="[155, 80, 155, 80]$[420, 80, 420, 80]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_42uAgrhOEeOLO7QreGm5IA" id="(0.49411764705882355,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_42uAg7hOEeOLO7QreGm5IA" id="(0.5,0.4827586206896552)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_lkOmsLhPEeOLO7QreGm5IA" type="4001" element="_lj7rwLhPEeOLO7QreGm5IA" source="_6ekIELhOEeOLO7QreGm5IA" target="_42kPgLhOEeOLO7QreGm5IA">
+            <children xmi:type="notation:Node" xmi:id="_lkYXsLhPEeOLO7QreGm5IA" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lkYXsbhPEeOLO7QreGm5IA" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lkYXsrhPEeOLO7QreGm5IA" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lkYXs7hPEeOLO7QreGm5IA" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lkYXtLhPEeOLO7QreGm5IA" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lkYXtbhPEeOLO7QreGm5IA" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_lkOmsbhPEeOLO7QreGm5IA"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_lkOmsrhPEeOLO7QreGm5IA" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lkOms7hPEeOLO7QreGm5IA" points="[285, 210, 285, 210]$[155, 80, 155, 80]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lkYXtrhPEeOLO7QreGm5IA" id="(0.5,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lkYXt7hPEeOLO7QreGm5IA" id="(0.49865229110512127,0.5)"/>
+          </edges>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_MjrQILhLEeOLO7QreGm5IA" name=" TARZAN " outgoingEdges="_42IKoLhOEeOLO7QreGm5IA" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="basicfamily:Man" href="jeroen.basicfamily#/"/>
+        <semanticElements xmi:type="basicfamily:Man" href="jeroen.basicfamily#/"/>
+        <decorations xmi:type="viewpoint:Decoration" xmi:id="_WaML0LhXEeOLO7QreGm5IA">
+          <description xmi:type="description_1:MappingBasedDecoration" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@decorationDescriptionsSet/@decorationDescriptions[name='Referenced%20Person']"/>
+        </decorations>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_MjrQIbhLEeOLO7QreGm5IA" iconPath="/basci.family.design/icons/man.png" labelPosition="node">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_MjrQIrhLEeOLO7QreGm5IA"/>
+          <description xmi:type="style:SquareDescription" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@nodeMappings[name='BorderedManNode']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_MjrQI7hLEeOLO7QreGm5IA"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_MjrQJLhLEeOLO7QreGm5IA" red="194" green="239" blue="255"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@nodeMappings[name='BorderedManNode']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6dhmQLhOEeOLO7QreGm5IA" name=" BOY " outgoingEdges="_lj7rwLhPEeOLO7QreGm5IA" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="basicfamily:Man" href="kouwer.basicfamily#//@members.0"/>
+        <semanticElements xmi:type="basicfamily:Man" href="kouwer.basicfamily#//@members.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_6dqwMLhOEeOLO7QreGm5IA" iconPath="/basci.family.design/icons/man.png" labelPosition="node">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_6dqwMbhOEeOLO7QreGm5IA"/>
+          <description xmi:type="style:SquareDescription" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@nodeMappings[name='BorderedManNode']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_6dqwMrhOEeOLO7QreGm5IA"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_6dqwM7hOEeOLO7QreGm5IA" red="194" green="239" blue="255"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@nodeMappings[name='BorderedManNode']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_N_UuwLhLEeOLO7QreGm5IA" name=" JANE " incomingEdges="_42IKoLhOEeOLO7QreGm5IA" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="basicfamily:Woman" href="joke.basicfamily#/"/>
+        <semanticElements xmi:type="basicfamily:Woman" href="joke.basicfamily#/"/>
+        <decorations xmi:type="viewpoint:Decoration" xmi:id="_WafGwLhXEeOLO7QreGm5IA">
+          <description xmi:type="description_1:MappingBasedDecoration" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@decorationDescriptionsSet/@decorationDescriptions[name='Referenced%20Person']"/>
+        </decorations>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_N_npsLhLEeOLO7QreGm5IA" iconPath="/basci.family.design/icons/woman.png" labelPosition="node">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_N_npsbhLEeOLO7QreGm5IA"/>
+          <description xmi:type="style:SquareDescription" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@nodeMappings[name='BorderedWomanNode']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_N_npsrhLEeOLO7QreGm5IA"/>
+          <color xmi:type="viewpoint:RGBValues" xmi:id="_N_nps7hLEeOLO7QreGm5IA" red="217" green="196" blue="215"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@nodeMappings[name='BorderedWomanNode']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_42IKoLhOEeOLO7QreGm5IA" name="Happy Marriage!" incomingEdges="_lj7rwLhPEeOLO7QreGm5IA" sourceNode="_MjrQILhLEeOLO7QreGm5IA" targetNode="_N_UuwLhLEeOLO7QreGm5IA">
+        <target xmi:type="basicfamily:Relation" href="kouwer.basicfamily#//@relations.0"/>
+        <semanticElements xmi:type="basicfamily:Relation" href="kouwer.basicfamily#//@relations.0"/>
+        <graphicalFilters xmi:type="diagram:HideLabelFilter" xmi:id="_4FwukLhXEeOLO7QreGm5IA"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_42IKobhOEeOLO7QreGm5IA" targetArrow="NoDecoration" size="2">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@edgeMappings[name='BoxedRelationEdge']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_42IKorhOEeOLO7QreGm5IA" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_42IKo7hOEeOLO7QreGm5IA" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_42IKpLhOEeOLO7QreGm5IA"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@edgeMappings[name='BoxedRelationEdge']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_lj7rwLhPEeOLO7QreGm5IA" sourceNode="_6dhmQLhOEeOLO7QreGm5IA" targetNode="_42IKoLhOEeOLO7QreGm5IA">
+        <target xmi:type="basicfamily:Man" href="kouwer.basicfamily#//@members.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_lj7rwbhPEeOLO7QreGm5IA" sourceArrow="InputArrow" targetArrow="NoDecoration" size="2">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@edgeMappings[name='BoxedParentsEdge']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_lj7rwrhPEeOLO7QreGm5IA" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_lj7rw7hPEeOLO7QreGm5IA">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_lj7rxLhPEeOLO7QreGm5IA"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer/@edgeMappings[name='BoxedParentsEdge']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_T87nkbhJEeOLO7QreGm5IA"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']/@ownedRepresentations[name='Family']/@defaultLayer"/>
       <target xmi:type="basicfamily:Family" href="kouwer.basicfamily#/"/>
     </ownedRepresentations>
     <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/basci.family.design/description/basicfamily.odesign#//@ownedViewpoints[name='Persons']"/>
